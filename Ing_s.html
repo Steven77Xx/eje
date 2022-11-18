@@ -1,0 +1,396 @@
+<html lang="en"><head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
+<style type="text/css">
+.navbar {
+    background-color: #333333;
+    
+}
+
+.auto-style1 {
+    color: #FFFFFF;
+    text-align:center;
+}
+</style>
+<style>
+.text{
+    padding-left: 40px;
+    max-width: 1500px;
+    min-width: 70%;
+}
+.navbar-toggler{
+  max-width: 1500px;
+  min-width: 70%;
+}
+</style>
+    <title>Automática y Control</title>
+    <!-- Bootstrap CSS -->
+    <!-- CUSTOM CSS -->
+    <link rel="stylesheet" href="/static/css/main.css">
+  </head>
+  <body style="background:url(https://i.gifer.com/origin/d5/d5cb7be29f6fb973ac6d45c8d0f5072c_w200.gif) ;">
+    <nav class="navbar navbar-expand-lg bg-dark">
+        <div  class="container-fluid">
+          <a class="navbar-brand" href="Inicio.html"><span class="auto-style1">EDUCACIÓN CONTINUA</span></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div  class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="Inicio.html"><span class="auto-style1">INICIO</span></a><span class="auto-style1"> </span>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Nosotros.html"><span class="auto-style1">NOSOTROS</span></a><span class="auto-style1"> </span>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Servicios.html"><span class="auto-style1">SERVICIOS</span></a><span class="auto-style1"> </span>
+              </li>
+                <li class="nav-item">
+                <a class="nav-link" href="Contacto.html"><span class="auto-style1">CONTACTO</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><span class="auto-style1">LOGIN</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><span class="auto-style1">REGISTRARSE</span></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+<nav class ="navbar">
+    <img src="https://geekflare.com/wp-content/uploads/2021/05/onlinedatabase-1200x385.png" style="height: 119px; min-width: 100%;max-width: 1500px"/>
+</nav>
+
+<!-- Modal Dialog Registro -->
+      <div class="container">
+        <div class="modal fade" id="ventanamodal1" tabindex="-1" role="dialog" aria-labelledby="tituloventana" aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 id="tituloventana">Registro de Usuarios</h5>
+                      <button class="close" name="button" data-dismiss="modal" aria-label="Cerrar"></button>
+                      <span aria-hidden="true">×</span>
+                    </div>
+
+                    <div class="modal-body">
+                      <div class="alert alert-success">
+
+
+
+
+
+<form action="/add_contact" method="POST">
+<table>
+  <tbody><tr>
+    <td>Nombre</td>
+    <td><input type="text" name="nom" value=""></td>
+    <td>Teléfono</td>
+    <td><input type="text" name="tel" value=""></td>
+  </tr>
+  <tr>
+    <td>Email</td>
+    <td><input type="text" name="mail" value=""></td>
+    <td> </td>
+    <td>Recibirá un email con el password.</td>
+    <!--
+    <td><input type="password" name="pass" value=""></td>-->
+  </tr>
+
+</tbody></table>
+<hr>
+  <button type="submit" name="button">Guardar</button>
+</form>
+                </div>
+                </div>
+              <div class="modal-footer">
+            <button class="btn btn-warning" type="button" data-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal Dialog Registro -->
+
+<!-- Modal Dialog Login -->
+
+  <div class="modal fade" id="ventanamodal2" tabindex="-1" role="dialog" aria-labelledby="tituloventana" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+          <div class="modal-content">
+              <div class="modal-header">
+              <h5 id="tituloventana">Autenticación de Usuarios</h5>
+            <button class="close" name="button" data-dismiss="modal" aria-label="Cerrar"></button>
+          <span aria-hidden="true">×</span>
+        </div>
+
+      <div class="modal-body">
+    <div class="alert alert-success">
+<h6>
+
+
+
+<form action="/login_contact" method="POST">
+<table>
+  <tbody><tr>
+    <td>Email</td>
+    <td><input type="text" name="email" value=""></td>
+    <td>Contraseña</td>
+    <td><input type="password" name="pass" value=""></td>
+  </tr>
+</tbody></table>
+<hr>
+  <button type="submit" name="button">Enviar</button>
+</form>
+</h6>
+    </div>
+      </div>
+        <div class="modal-footer">
+            <button class="btn btn-warning" type="button" data-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- Modal Dialog Login -->
+
+
+
+<title>Automatización Industrial</title>
+<div class="container p-4">
+<div class="main-header ">
+  <div class="text-white">
+  <h1 class="display-6">Automatización Industrial.</h1>
+  <h5><p class="my-4">Ingeniería y montajes industriales.</p></h5>
+  <hr class="my-4">
+  <h5><p>Educación Continuada.</p></h5>
+  </div>
+</div>
+<br>
+<br>
+
+<h3 style="color:white ;">Ingeniería de Software</h3>
+<hr>
+<h4 style="color:white ;">Estructuración en el desarrollo de sistemas computacionales.</h4>
+<div class="accordion" id="accordionExample">
+  <div class="card">
+    <div class="card-header" id="headingOne">
+      <h2 class="mb-0">
+        <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          Introducción a la Ingeniería de Software
+        </button>
+      </h2>
+    </div>
+    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+      <div class="card-body bg-light">
+        <li>...</li>
+        <hr>
+</div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header" id="headingTwo">
+      <h2 class="mb-0">
+        <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          Metodologías Ágiles.
+        </button>
+      </h2>
+    </div>
+    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+      <div class="card-body bg-light">
+        <li>...</li>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header" id="headingThree">
+      <h2 class="mb-0">
+        <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          Técnicas de elicitación de requisitos.
+        </button>
+      </h2>
+    </div>
+    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+      <div class="card-body bg-light">
+        <li>...</li>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header" id="headingFour">
+      <h2 class="mb-0">
+        <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+          Modelado en UML.
+        </button>
+      </h2>
+    </div>
+    <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+      <div class="card-body bg-light">
+        <li>...</li>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header" id="headingSix">
+      <h2 class="mb-0">
+        <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+          Diseño de la propuesta de solución.
+        </button>
+      </h2>
+    </div>
+    <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordionExample">
+      <div class="card-body bg-light">
+        <li>...</li>
+      </div>
+    </div>
+  </div>
+  <br>
+
+
+  <div class="card">
+    <div class="card-header" id="headingFive">
+      <h2 class="mb-0">
+        <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+          Más información.
+        </button>
+      </h2>
+    </div>
+    <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
+      <div class="card-body bg-light">
+        <li>
+          <strong>Objetivo.</strong>.</li>
+        <hr>
+        <li>
+          <strong>Competencias.</strong>. <br>
+        </li>
+        <hr>
+        <li>
+          <strong>Modalidad.</strong> <br>Virtual.&nbsp;
+        </li>
+        <hr>
+        <hr>
+        <li>
+          <strong>Requisitos.</strong><br> Computador y acceso a internet. <br>
+          Conocimientos básicos de informática. <br></li>
+        <hr>
+        <li>
+          <strong>Idioma.</strong><br> Español.
+        </li>
+        <hr>
+        <li>...</li>
+        <hr>
+        <li>
+            <strong>Duración total:</strong> 64 horas.
+        </li>
+        <hr>
+        <li>
+            <strong>Horario:</strong><br>A convenir.<br>
+            <strong>Hora colombiana.</strong>
+        </li>
+        <hr>
+        <li>
+            <strong>Inversión:</strong><br> US$...
+        </li>
+        <hr>
+        <li>
+            <strong>Modo de pago.</strong><br>Por concertación.</li>
+        <hr>
+        <li><strong>Tutor.</strong><br> Ruben Darío Ángel Correa. Ms en Ingeniería Mecánica. Universidad de Sao Paulo (Sao Carlos, Brasil, 2017).
+          Ms en Computación. Universidad Nacional de Colombia (Bogotá, Colombia, 2004).
+          Ing Electrónico. Universidad de Antioquia (Medellín, Colombia, 1992).
+          Experiencia:&nbsp;docente por más de veinte años en universidades nacionales y extranjeras.
+        </li>
+        <hr>
+      </div>
+    </div>
+  </div>
+</div>
+<br>
+<br>
+<div class="card">
+  <div class="card-header" id="headingSeven">
+    <h2 class="mb-0">
+      <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+        <strong>Inscríbase</strong>
+      </button>
+    </h2>
+  </div>
+  <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordionExample">
+    <div class="card-body bg-light">
+      <li>Envíe un e-mail nombre, teléfono, ciudad y país de procedencia a: <strong>autoycontrolinfo@gmail.com</strong> o escriba al WhatsApp +573017871669</li><br>
+      <li><strong>Referencia:</strong> Ingeniería de Software. </li><br>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- CONTACT -->
+<!-- CONTACT
+<div class="card">
+  <div class="background-overlay text-white">
+  <h3>Contáctenos</h3>
+  <a name="contactenos" id="contactenos"></a>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-9">
+        <form action="">
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <i class="fas fa-user input-group-text"></i>
+            </div>
+            <input type="text" class="form-control" placeholder="Nombre" aria-label="Username" aria-describedby="basic-addon1">
+          </div>
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <i class="fas fa-envelope input-group-text"></i>
+            </div>
+            <input type="text" class="form-control" placeholder="E-mail" aria-label="Username" aria-describedby="basic-addon1">
+          </div>
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <i class="fas fa-pencil-alt input-group-text"></i>
+            </div>
+            <textarea name="" cols="30" rows="10" placeholder="Mensaje" class="form-control"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary bg-dark border-dark">Me quiero inscribir</button>
+        </form>
+      </div>
+      <div class="col-lg-3 align-self-center">
+        <img src="img/logo.png" alt="">
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>
+-->
+
+</div>
+
+
+
+    <div class="container p-4">
+
+    <footer>
+    <div class="row text-center text-black bg-light text-dark">
+      <div class="col ml-auto">
+        <h6>Copyright © Ms Ruben Darío Angel Correa. 2020</h6>
+        <h6>Sabaneta, Antioquia, Colombia</h6>
+      </div>
+    </div>
+    </footer>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  
+</body></html>
